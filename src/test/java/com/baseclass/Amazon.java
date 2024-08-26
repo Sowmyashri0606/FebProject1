@@ -13,6 +13,7 @@ public class Amazon {
 public static void main(String[] args) throws InterruptedException {	
 WebDriver driver = new ChromeDriver();
 driver.manage().window().maximize();
+driver.get("https://www.google.com/");
 driver.get("https://www.amazon.in/");
 WebElement element = driver.findElement(By.xpath("//input[@type='text']"));
 element.sendKeys("iphone");
